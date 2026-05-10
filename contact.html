@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<figure>
+    <meta charset="UTF-8">
+    <title>Portfolio Anzor Donkurov</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--LEAFLET-->
+
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <link rel="stylesheet" href="css/map.css">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    
+</head>
+<body>
+
+<link rel="stylesheet" href="./CSS/map.css">
+<!--Navigatie-->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Inhoud-->
+<main>
+    <article class="project-card">
+        <section class="project-section">
+            <h1>Neem gerust contact op</h1>
+            <form action="mailto:anzor2508@gmail.com" method="post" enctype="text/plain0" class="form-contact">
+
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" class="textarea-contact">
+
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" class="textarea-contact">
+
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" rows="5" class="textarea-contact"></textarea>
+
+                <button type="submit" class="button-contact">
+                    Verstuur
+                </button>
+            </form>
+            <section id="map" class="row">
+                <figure id="HomeMap" class="col-12 mb-3"></figure>
+            </section>
+        </section>
+    </article>
+</main>
+
+<footer>
+  <section>
+    <p>&copy; <span id="year"></span>Anzor Donkurov, Mijn portfolio.</p>
+  </section>
+</footer>
+
+</body>
+</html>
